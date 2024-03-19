@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Business Survey</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    #result {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Business Survey</h1>
+  <form id="surveyForm">
+    <div id="questionsContainer"></div>
+    <button type="button" onclick="goBack()">Back</button>
+    <button type="submit">Next</button>
+  </form>
+  <button id="installButton">Install App</button>
+  <div id="result">
+    <h2>Survey Result</h2>
+    <p>Total Score: <span id="totalScore"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
